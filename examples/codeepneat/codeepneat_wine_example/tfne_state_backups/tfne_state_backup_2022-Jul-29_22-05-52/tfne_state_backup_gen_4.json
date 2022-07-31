@@ -1,0 +1,2421 @@
+{
+    "type": "CoDeepNEAT",
+    "population": {
+        "population_type": "CoDeepNEAT",
+        "generation_counter": 4,
+        "modules": {
+            "145": {
+                "module_type": "DenseDropout",
+                "module_id": 145,
+                "parent_mutation": {
+                    "parent_id": 101,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "bias_init": "zeros",
+                        "dropout_rate": 0.4
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 92,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.30000000000000004
+            },
+            "146": {
+                "module_type": "DenseDropout",
+                "module_id": 146,
+                "parent_mutation": {
+                    "parent_id": [
+                        109,
+                        100
+                    ],
+                    "mutation": "crossover"
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 48,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.30000000000000004
+            },
+            "147": {
+                "module_type": "DenseDropout",
+                "module_id": 147,
+                "parent_mutation": {
+                    "parent_id": [
+                        77,
+                        101
+                    ],
+                    "mutation": "crossover"
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 56,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.4
+            },
+            "148": {
+                "module_type": "DenseDropout",
+                "module_id": 148,
+                "parent_mutation": {
+                    "parent_id": 104,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "bias_init": "zeros"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 136,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.2
+            },
+            "149": {
+                "module_type": "DenseDropout",
+                "module_id": 149,
+                "parent_mutation": {
+                    "parent_id": [
+                        132,
+                        135
+                    ],
+                    "mutation": "crossover"
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 132,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.2
+            },
+            "150": {
+                "module_type": "DenseDropout",
+                "module_id": 150,
+                "parent_mutation": {
+                    "parent_id": [
+                        143,
+                        138
+                    ],
+                    "mutation": "crossover"
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 56,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.30000000000000004
+            },
+            "151": {
+                "module_type": "DenseDropout",
+                "module_id": 151,
+                "parent_mutation": {
+                    "parent_id": [
+                        141,
+                        132
+                    ],
+                    "mutation": "crossover"
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 136,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.4
+            },
+            "152": {
+                "module_type": "DenseDropout",
+                "module_id": 152,
+                "parent_mutation": {
+                    "parent_id": 132,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "kernel_init": "glorot_normal"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 136,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.30000000000000004
+            },
+            "153": {
+                "module_type": "DenseDropout",
+                "module_id": 153,
+                "parent_mutation": {
+                    "parent_id": 137,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "activation": "softmax"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 200,
+                "activation": "relu",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.2
+            },
+            "154": {
+                "module_type": "DenseDropout",
+                "module_id": 154,
+                "parent_mutation": {
+                    "parent_id": 125,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "activation": "softmax",
+                        "bias_init": "zeros"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 108,
+                "activation": "relu",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.30000000000000004
+            },
+            "155": {
+                "module_type": "DenseDropout",
+                "module_id": 155,
+                "parent_mutation": {
+                    "parent_id": [
+                        143,
+                        146
+                    ],
+                    "mutation": "crossover"
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 68,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.2
+            },
+            "156": {
+                "module_type": "DenseDropout",
+                "module_id": 156,
+                "parent_mutation": {
+                    "parent_id": 135,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "dropout_rate": 0.2,
+                        "activation": "softmax"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 124,
+                "activation": "linear",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.2
+            },
+            "157": {
+                "module_type": "DenseDropout",
+                "module_id": 157,
+                "parent_mutation": {
+                    "parent_id": 141,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "bias_init": "zeros"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 136,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.4
+            },
+            "158": {
+                "module_type": "DenseDropout",
+                "module_id": 158,
+                "parent_mutation": {
+                    "parent_id": 130,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "dropout_rate": 0.2
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 132,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.2
+            },
+            "159": {
+                "module_type": "DenseDropout",
+                "module_id": 159,
+                "parent_mutation": {
+                    "parent_id": 136,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "bias_init": "zeros"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 112,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.30000000000000004
+            },
+            "160": {
+                "module_type": "DenseDropout",
+                "module_id": 160,
+                "parent_mutation": {
+                    "parent_id": 127,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "units": 136,
+                        "kernel_init": "he_normal"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 136,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.2
+            },
+            "161": {
+                "module_type": "DenseDropout",
+                "module_id": 161,
+                "parent_mutation": {
+                    "parent_id": 136,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "dropout_rate": 0.30000000000000004
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 112,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.4
+            },
+            "162": {
+                "module_type": "DenseDropout",
+                "module_id": 162,
+                "parent_mutation": {
+                    "parent_id": 138,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "merge_method": {
+                            "class_name": "Concatenate",
+                            "config": {
+                                "axis": -1,
+                                "dtype": "float16"
+                            }
+                        },
+                        "dropout_rate": 0.4,
+                        "bias_init": "zeros"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 20,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.4
+            },
+            "163": {
+                "module_type": "DenseDropout",
+                "module_id": 163,
+                "parent_mutation": {
+                    "parent_id": 131,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "kernel_init": "glorot_normal",
+                        "dropout_flag": false
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 48,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.4
+            },
+            "164": {
+                "module_type": "DenseDropout",
+                "module_id": 164,
+                "parent_mutation": {
+                    "parent_id": 143,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "bias_init": "zeros"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 88,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.2
+            },
+            "165": {
+                "module_type": "DenseDropout",
+                "module_id": 165,
+                "parent_mutation": {
+                    "parent_id": 146,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "merge_method": {
+                            "class_name": "Concatenate",
+                            "config": {
+                                "axis": -1,
+                                "dtype": "float16"
+                            }
+                        },
+                        "kernel_init": "he_normal"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 48,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.30000000000000004
+            },
+            "166": {
+                "module_type": "DenseDropout",
+                "module_id": 166,
+                "parent_mutation": {
+                    "parent_id": 127,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "bias_init": "zeros",
+                        "units": 136
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 136,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.2
+            },
+            "167": {
+                "module_type": "DenseDropout",
+                "module_id": 167,
+                "parent_mutation": {
+                    "parent_id": 137,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "units": 200
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 200,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.2
+            },
+            "168": {
+                "module_type": "DenseDropout",
+                "module_id": 168,
+                "parent_mutation": {
+                    "parent_id": 148,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "units": 136,
+                        "activation": "softmax"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 136,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.2
+            },
+            "169": {
+                "module_type": "DenseDropout",
+                "module_id": 169,
+                "parent_mutation": {
+                    "parent_id": 137,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "bias_init": "zeros"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 200,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.2
+            },
+            "170": {
+                "module_type": "DenseDropout",
+                "module_id": 170,
+                "parent_mutation": {
+                    "parent_id": [
+                        145,
+                        126
+                    ],
+                    "mutation": "crossover"
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 72,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.30000000000000004
+            },
+            "171": {
+                "module_type": "DenseDropout",
+                "module_id": 171,
+                "parent_mutation": {
+                    "parent_id": 132,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "merge_method": {
+                            "class_name": "Concatenate",
+                            "config": {
+                                "axis": -1,
+                                "dtype": "float16"
+                            }
+                        }
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 136,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.30000000000000004
+            },
+            "172": {
+                "module_type": "DenseDropout",
+                "module_id": 172,
+                "parent_mutation": {
+                    "parent_id": 148,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "dropout_flag": true
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 136,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.2
+            },
+            "173": {
+                "module_type": "DenseDropout",
+                "module_id": 173,
+                "parent_mutation": {
+                    "parent_id": 138,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "units": 20,
+                        "dropout_rate": 0.4
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 16,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.30000000000000004
+            },
+            "174": {
+                "module_type": "DenseDropout",
+                "module_id": 174,
+                "parent_mutation": {
+                    "parent_id": 141,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "dropout_flag": false
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 136,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.4
+            },
+            "175": {
+                "module_type": "DenseDropout",
+                "module_id": 175,
+                "parent_mutation": {
+                    "parent_id": 142,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "dropout_flag": true
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 200,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.2
+            },
+            "176": {
+                "module_type": "DenseDropout",
+                "module_id": 176,
+                "parent_mutation": {
+                    "parent_id": 126,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "units": 48
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 44,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.30000000000000004
+            },
+            "177": {
+                "module_type": "DenseDropout",
+                "module_id": 177,
+                "parent_mutation": {
+                    "parent_id": [
+                        138,
+                        132
+                    ],
+                    "mutation": "crossover"
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 80,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.4
+            },
+            "178": {
+                "module_type": "DenseDropout",
+                "module_id": 178,
+                "parent_mutation": {
+                    "parent_id": 130,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "bias_init": "zeros"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 132,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.2
+            },
+            "179": {
+                "module_type": "DenseDropout",
+                "module_id": 179,
+                "parent_mutation": {
+                    "parent_id": 143,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "bias_init": "zeros",
+                        "dropout_flag": false
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 88,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.2
+            },
+            "180": {
+                "module_type": "DenseDropout",
+                "module_id": 180,
+                "parent_mutation": {
+                    "parent_id": 131,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "dropout_flag": false,
+                        "merge_method": {
+                            "class_name": "Concatenate",
+                            "config": {
+                                "axis": -1,
+                                "dtype": "float16"
+                            }
+                        }
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 48,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.4
+            },
+            "181": {
+                "module_type": "DenseDropout",
+                "module_id": 181,
+                "parent_mutation": {
+                    "parent_id": 140,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "units": 48,
+                        "dropout_rate": 0.2
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 44,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.30000000000000004
+            },
+            "182": {
+                "module_type": "DenseDropout",
+                "module_id": 182,
+                "parent_mutation": {
+                    "parent_id": 135,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "kernel_init": "he_normal"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 124,
+                "activation": "softmax",
+                "kernel_init": "he_normal",
+                "bias_init": "zeros",
+                "dropout_flag": false,
+                "dropout_rate": 0.2
+            },
+            "183": {
+                "module_type": "DenseDropout",
+                "module_id": 183,
+                "parent_mutation": {
+                    "parent_id": [
+                        142,
+                        138
+                    ],
+                    "mutation": "crossover"
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 112,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.30000000000000004
+            },
+            "184": {
+                "module_type": "DenseDropout",
+                "module_id": 184,
+                "parent_mutation": {
+                    "parent_id": 142,
+                    "mutation": "mutation",
+                    "mutated_params": {
+                        "bias_init": "zeros"
+                    }
+                },
+                "merge_method": {
+                    "class_name": "Concatenate",
+                    "config": {
+                        "axis": -1,
+                        "dtype": "float16"
+                    }
+                },
+                "units": 200,
+                "activation": "softmax",
+                "kernel_init": "glorot_normal",
+                "bias_init": "zeros",
+                "dropout_flag": true,
+                "dropout_rate": 0.2
+            }
+        },
+        "mod_species": {
+            "1": [
+                145,
+                146,
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158,
+                159,
+                160,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167,
+                168,
+                169,
+                170,
+                171,
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183,
+                184
+            ]
+        },
+        "mod_species_repr": null,
+        "mod_species_fitness_history": {
+            "1": {
+                "0": 34.7975,
+                "1": 34.235,
+                "2": 38.1482,
+                "3": 40.0753,
+                "4": 41.0371
+            }
+        },
+        "mod_species_counter": 1,
+        "blueprints": {
+            "93": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 93,
+                "parent_mutation": {
+                    "parent_id": 17,
+                    "mutation": "add_conn",
+                    "added_genes": []
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "94": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 94,
+                "parent_mutation": {
+                    "parent_id": 66,
+                    "mutation": "add_node",
+                    "added_genes": [
+                        7,
+                        8,
+                        9
+                    ]
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": false
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "7": {
+                        "node": 4,
+                        "species": 1
+                    },
+                    "8": {
+                        "conn_start": 1,
+                        "conn_end": 4,
+                        "enabled": true
+                    },
+                    "9": {
+                        "conn_start": 4,
+                        "conn_end": 3,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.3,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "95": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 95,
+                "parent_mutation": {
+                    "parent_id": 78,
+                    "mutation": "node_spec",
+                    "mutated_node_spec": {}
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.2,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "96": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 96,
+                "parent_mutation": {
+                    "parent_id": 86,
+                    "mutation": "optimizer",
+                    "mutated_params": {
+                        "class_name": "sgd",
+                        "config": {
+                            "learning_rate": 0.2,
+                            "momentum": 0.5,
+                            "nesterov": true
+                        }
+                    }
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.1,
+                        "momentum": 0.6,
+                        "nesterov": true
+                    }
+                }
+            },
+            "97": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 97,
+                "parent_mutation": {
+                    "parent_id": [
+                        86,
+                        85
+                    ],
+                    "mutation": "crossover",
+                    "gene_parent": {
+                        "1": 85,
+                        "2": 86,
+                        "3": 85
+                    },
+                    "optimizer_parent": 85
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "98": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 98,
+                "parent_mutation": {
+                    "parent_id": 93,
+                    "mutation": "add_node",
+                    "added_genes": [
+                        4,
+                        5,
+                        6
+                    ]
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": false
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": true
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "99": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 99,
+                "parent_mutation": {
+                    "parent_id": 94,
+                    "mutation": "node_spec",
+                    "mutated_node_spec": {}
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": false
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "7": {
+                        "node": 4,
+                        "species": 1
+                    },
+                    "8": {
+                        "conn_start": 1,
+                        "conn_end": 4,
+                        "enabled": true
+                    },
+                    "9": {
+                        "conn_start": 4,
+                        "conn_end": 3,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.3,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "100": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 100,
+                "parent_mutation": {
+                    "parent_id": 92,
+                    "mutation": "add_conn",
+                    "added_genes": []
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.3,
+                        "momentum": 0.30000000000000004,
+                        "nesterov": true
+                    }
+                }
+            },
+            "101": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 101,
+                "parent_mutation": {
+                    "parent_id": [
+                        85,
+                        87
+                    ],
+                    "mutation": "crossover",
+                    "gene_parent": {
+                        "1": 87,
+                        "2": 85,
+                        "3": 87,
+                        "4": 87,
+                        "5": 87,
+                        "6": 87
+                    },
+                    "optimizer_parent": 87
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": false
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": true
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.4,
+                        "nesterov": true
+                    }
+                }
+            },
+            "102": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 102,
+                "parent_mutation": {
+                    "parent_id": [
+                        81,
+                        78
+                    ],
+                    "mutation": "crossover",
+                    "gene_parent": {
+                        "1": 78,
+                        "2": 78,
+                        "3": 78
+                    },
+                    "optimizer_parent": 78
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.2,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "103": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 103,
+                "parent_mutation": {
+                    "parent_id": 87,
+                    "mutation": "rem_node",
+                    "removed_genes": [
+                        4,
+                        5,
+                        6
+                    ]
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.4,
+                        "nesterov": true
+                    }
+                }
+            },
+            "104": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 104,
+                "parent_mutation": {
+                    "parent_id": 94,
+                    "mutation": "node_spec",
+                    "mutated_node_spec": {}
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": false
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "7": {
+                        "node": 4,
+                        "species": 1
+                    },
+                    "8": {
+                        "conn_start": 1,
+                        "conn_end": 4,
+                        "enabled": true
+                    },
+                    "9": {
+                        "conn_start": 4,
+                        "conn_end": 3,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.3,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "105": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 105,
+                "parent_mutation": {
+                    "parent_id": [
+                        93,
+                        87
+                    ],
+                    "mutation": "crossover",
+                    "gene_parent": {
+                        "1": 93,
+                        "2": 93,
+                        "3": 93,
+                        "4": 87,
+                        "5": 87,
+                        "6": 87
+                    },
+                    "optimizer_parent": 87
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": true
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.4,
+                        "nesterov": true
+                    }
+                }
+            },
+            "106": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 106,
+                "parent_mutation": {
+                    "parent_id": 90,
+                    "mutation": "rem_node",
+                    "removed_genes": [
+                        7,
+                        8,
+                        9,
+                        4,
+                        5,
+                        6
+                    ]
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.3,
+                        "momentum": 0.30000000000000004,
+                        "nesterov": true
+                    }
+                }
+            },
+            "107": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 107,
+                "parent_mutation": {
+                    "parent_id": 79,
+                    "mutation": "add_node",
+                    "added_genes": [
+                        7,
+                        8,
+                        9
+                    ]
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": false
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "7": {
+                        "node": 4,
+                        "species": 1
+                    },
+                    "8": {
+                        "conn_start": 1,
+                        "conn_end": 4,
+                        "enabled": true
+                    },
+                    "9": {
+                        "conn_start": 4,
+                        "conn_end": 3,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.6000000000000001,
+                        "nesterov": true
+                    }
+                }
+            },
+            "108": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 108,
+                "parent_mutation": {
+                    "parent_id": 80,
+                    "mutation": "add_node",
+                    "added_genes": [
+                        7,
+                        8,
+                        9
+                    ]
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": false
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": false
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "7": {
+                        "node": 4,
+                        "species": 1
+                    },
+                    "8": {
+                        "conn_start": 1,
+                        "conn_end": 4,
+                        "enabled": true
+                    },
+                    "9": {
+                        "conn_start": 4,
+                        "conn_end": 3,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.3,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "109": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 109,
+                "parent_mutation": {
+                    "parent_id": 85,
+                    "mutation": "add_conn",
+                    "added_genes": []
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "110": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 110,
+                "parent_mutation": {
+                    "parent_id": 78,
+                    "mutation": "add_conn",
+                    "added_genes": []
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.2,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "111": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 111,
+                "parent_mutation": {
+                    "parent_id": 79,
+                    "mutation": "add_node",
+                    "added_genes": [
+                        10,
+                        11,
+                        12
+                    ]
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": true
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": false
+                    },
+                    "10": {
+                        "node": 5,
+                        "species": 1
+                    },
+                    "11": {
+                        "conn_start": 3,
+                        "conn_end": 5,
+                        "enabled": true
+                    },
+                    "12": {
+                        "conn_start": 5,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.6000000000000001,
+                        "nesterov": true
+                    }
+                }
+            },
+            "112": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 112,
+                "parent_mutation": {
+                    "parent_id": 87,
+                    "mutation": "optimizer",
+                    "mutated_params": {
+                        "class_name": "sgd",
+                        "config": {
+                            "learning_rate": 0.15000000000000002,
+                            "momentum": 0.4,
+                            "nesterov": true
+                        }
+                    }
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": false
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": true
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.1,
+                        "momentum": 0.30000000000000004,
+                        "nesterov": true
+                    }
+                }
+            },
+            "113": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 113,
+                "parent_mutation": {
+                    "parent_id": 85,
+                    "mutation": "add_node",
+                    "added_genes": [
+                        4,
+                        5,
+                        6
+                    ]
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": false
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": true
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "114": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 114,
+                "parent_mutation": {
+                    "parent_id": [
+                        79,
+                        78
+                    ],
+                    "mutation": "crossover",
+                    "gene_parent": {
+                        "1": 79,
+                        "2": 79,
+                        "3": 78,
+                        "4": 79,
+                        "5": 79,
+                        "6": 79
+                    },
+                    "optimizer_parent": 78
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": true
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.2,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "115": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 115,
+                "parent_mutation": {
+                    "parent_id": 92,
+                    "mutation": "optimizer",
+                    "mutated_params": {
+                        "class_name": "sgd",
+                        "config": {
+                            "learning_rate": 0.3,
+                            "momentum": 0.30000000000000004,
+                            "nesterov": true
+                        }
+                    }
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.3,
+                        "momentum": 0.7,
+                        "nesterov": true
+                    }
+                }
+            },
+            "116": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 116,
+                "parent_mutation": {
+                    "parent_id": [
+                        87,
+                        80
+                    ],
+                    "mutation": "crossover",
+                    "gene_parent": {
+                        "1": 87,
+                        "2": 80,
+                        "3": 80,
+                        "4": 80,
+                        "5": 87,
+                        "6": 80
+                    },
+                    "optimizer_parent": 80
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": false
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": true
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.3,
+                        "momentum": 0.5,
+                        "nesterov": true
+                    }
+                }
+            },
+            "117": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 117,
+                "parent_mutation": {
+                    "parent_id": 87,
+                    "mutation": "add_node",
+                    "added_genes": [
+                        7,
+                        8,
+                        9
+                    ]
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": false
+                    },
+                    "4": {
+                        "node": 3,
+                        "species": 1
+                    },
+                    "5": {
+                        "conn_start": 1,
+                        "conn_end": 3,
+                        "enabled": false
+                    },
+                    "6": {
+                        "conn_start": 3,
+                        "conn_end": 2,
+                        "enabled": true
+                    },
+                    "7": {
+                        "node": 4,
+                        "species": 1
+                    },
+                    "8": {
+                        "conn_start": 1,
+                        "conn_end": 4,
+                        "enabled": true
+                    },
+                    "9": {
+                        "conn_start": 4,
+                        "conn_end": 3,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.4,
+                        "nesterov": true
+                    }
+                }
+            }
+        },
+        "bp_species": {
+            "1": [
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                104,
+                105,
+                106,
+                107,
+                108,
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117
+            ]
+        },
+        "bp_species_repr": null,
+        "bp_species_fitness_history": {
+            "1": {
+                "0": 37.5833,
+                "1": 37.25,
+                "2": 38.6667,
+                "3": 41.0278,
+                "4": 40.9445
+            }
+        },
+        "bp_species_counter": 1,
+        "best_genome": {
+            "genome_type": "CoDeepNEAT",
+            "genome_id": 1,
+            "fitness": 41.6667,
+            "blueprint": {
+                "blueprint_type": "CoDeepNEAT",
+                "blueprint_id": 1,
+                "parent_mutation": {
+                    "parent_id": null,
+                    "mutation": "init"
+                },
+                "blueprint_graph": {
+                    "1": {
+                        "node": 1,
+                        "species": null
+                    },
+                    "2": {
+                        "node": 2,
+                        "species": 1
+                    },
+                    "3": {
+                        "conn_start": 1,
+                        "conn_end": 2,
+                        "enabled": true
+                    }
+                },
+                "optimizer_factory": {
+                    "class_name": "sgd",
+                    "config": {
+                        "learning_rate": 0.15000000000000002,
+                        "momentum": 0.6,
+                        "nesterov": true
+                    }
+                }
+            },
+            "bp_assigned_modules": {
+                "1": {
+                    "module_type": "DenseDropout",
+                    "module_id": 16,
+                    "parent_mutation": {
+                        "parent_id": null,
+                        "mutation": "init"
+                    },
+                    "merge_method": {
+                        "class_name": "Concatenate",
+                        "config": {
+                            "axis": -1,
+                            "dtype": "float16"
+                        }
+                    },
+                    "units": 104,
+                    "activation": "softmax",
+                    "kernel_init": "he_normal",
+                    "bias_init": "zeros",
+                    "dropout_flag": true,
+                    "dropout_rate": 0.30000000000000004
+                }
+            },
+            "output_layers": [
+                {
+                    "class_name": "Dense",
+                    "config": {
+                        "units": 3,
+                        "activation": "softmax",
+                        "dtype": "float16"
+                    }
+                }
+            ],
+            "input_shape": [
+                13
+            ],
+            "dtype": "float16",
+            "origin_generation": 0
+        },
+        "best_fitness": 41.6667
+    },
+    "encoding": {
+        "encoding_type": "CoDeepNEAT",
+        "genome_id_counter": 500,
+        "mod_id_counter": 184,
+        "bp_id_counter": 117,
+        "bp_gene_id_counter": 13,
+        "gene_to_gene_id": {
+            "(1,)": 1,
+            "(2,)": 2,
+            "(1, 2)": 3,
+            "(3,)": 4,
+            "(1, 3)": 5,
+            "(3, 2)": 6,
+            "(4,)": 7,
+            "(1, 4)": 8,
+            "(4, 3)": 9,
+            "(5,)": 10,
+            "(3, 5)": 11,
+            "(5, 2)": 12,
+            "(4, 2)": 13
+        },
+        "node_counter": 5,
+        "conn_split_history": {
+            "(1, 2)": 3,
+            "(1, 3)": 4,
+            "(3, 2)": 5
+        }
+    }
+}

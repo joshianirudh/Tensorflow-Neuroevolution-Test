@@ -30,7 +30,6 @@ class CoDeepNEATModuleConv2DMaxPool2DDropout(CoDeepNEATModuleBase):
                  activation=None,
                  kernel_init=None,
                  bias_init=None,
-                 batch_norm_flag = None,
                  max_pool_flag=None,
                  max_pool_size=None,
                  dropout_flag=None,
@@ -70,7 +69,6 @@ class CoDeepNEATModuleConv2DMaxPool2DDropout(CoDeepNEATModuleBase):
         self.kernel_init = kernel_init
         self.bias_init = bias_init
         self.max_pool_flag = max_pool_flag
-        self.batch_norm_flag = batch_norm_flag
         self.max_pool_size = max_pool_size
         self.dropout_flag = dropout_flag
         self.dropout_rate = dropout_rate
@@ -134,9 +132,7 @@ class CoDeepNEATModuleConv2DMaxPool2DDropout(CoDeepNEATModuleBase):
         module_layers = list()
 
         # Create the basic keras Convolutional 2D layer, needed in all variants of the module
-        if self.batch_norm_flag:
-            batch_norm_layer = tf.keras.layers.BatchNormalization()
-            module_layers.append(batch_norm_layer)
+       
 
         conv_layer = tf.keras.layers.Conv2D(filters=self.filters,
                                             kernel_size=self.kernel_size,
@@ -238,7 +234,6 @@ class CoDeepNEATModuleConv2DMaxPool2DDropout(CoDeepNEATModuleBase):
                             'activation': self.activation,
                             'kernel_init': self.kernel_init,
                             'bias_init': self.bias_init,
-                            'batch_norm_flag': self.batch_norm_flag,
                             'max_pool_flag': self.max_pool_flag,
                             'max_pool_size': self.max_pool_size,
                             'dropout_flag': self.dropout_flag,
@@ -250,10 +245,10 @@ class CoDeepNEATModuleConv2DMaxPool2DDropout(CoDeepNEATModuleBase):
                            'mutated_params': dict()}
 
         # Determine exact integer amount of parameters to be mutated, though minimum is 1
-        param_mutation_count = math.ceil(max_degree_of_mutation * 13)
+        param_mutation_count = math.ceil(max_degree_of_mutation * 12)
 
         # Uniform randomly choose the parameters to be mutated
-        parameters_to_mutate = random.sample(range(13), k=param_mutation_count)
+        parameters_to_mutate = random.sample(range(12), k=param_mutation_count)
 
         # Mutate offspring parameters. Categorical parameters are chosen randomly from all available values. Sortable
         # parameters are perturbed through a random normal distribution with the current value as mean and the config
@@ -289,15 +284,12 @@ class CoDeepNEATModuleConv2DMaxPool2DDropout(CoDeepNEATModuleBase):
                 offspring_params['bias_init'] = random.choice(self.config_params['bias_init'])
                 parent_mutation['mutated_params']['bias_init'] = self.bias_init
             elif param_to_mutate == 8:
-                offspring_params['batch_norm_flag'] = not self.batch_norm_flag
-                parent_mutation['mutated_params']['batch_norm_flag'] = self.batch_norm_flag
-            elif param_to_mutate == 9:
                 offspring_params['max_pool_flag'] = not self.max_pool_flag
                 parent_mutation['mutated_params']['max_pool_flag'] = self.max_pool_flag
-            elif param_to_mutate == 10:
+            elif param_to_mutate == 9:
                 offspring_params['max_pool_size'] = random.choice(self.config_params['max_pool_size'])
                 parent_mutation['mutated_params']['max_pool_size'] = self.max_pool_size
-            elif param_to_mutate == 11:
+            elif param_to_mutate == 10:
                 offspring_params['dropout_flag'] = not self.dropout_flag
                 parent_mutation['mutated_params']['dropout_flag'] = self.dropout_flag
             else:  # param_to_mutate == 11:
@@ -346,7 +338,6 @@ class CoDeepNEATModuleConv2DMaxPool2DDropout(CoDeepNEATModuleBase):
         offspring_params['activation'] = self.activation
         offspring_params['kernel_init'] = self.kernel_init
         offspring_params['bias_init'] = self.bias_init
-        offspring_params['batch_norm_flag'] = self.batch_norm_flag
         offspring_params['max_pool_flag'] = self.max_pool_flag
         offspring_params['max_pool_size'] = self.max_pool_size
         offspring_params['dropout_flag'] = self.dropout_flag
@@ -378,7 +369,6 @@ class CoDeepNEATModuleConv2DMaxPool2DDropout(CoDeepNEATModuleBase):
             'activation': self.activation,
             'kernel_init': self.kernel_init,
             'bias_init': self.bias_init,
-            'batch_norm_flag': self.batch_norm_flag,
             'max_pool_flag': self.max_pool_flag,
             'max_pool_size': self.max_pool_size,
             'dropout_flag': self.dropout_flag,
